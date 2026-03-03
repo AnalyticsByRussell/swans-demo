@@ -1,0 +1,14 @@
+
+    
+    
+    
+    create table "swans_demo"."fct"."counties" ("county" text)
+  ;
+    -- dbt seed --
+    
+          insert into "swans_demo"."fct"."counties" ("county") values
+          (%s),(%s),(%s)
+      
+
+;
+  

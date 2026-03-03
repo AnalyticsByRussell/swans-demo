@@ -1,0 +1,8 @@
+version: 2
+
+sources:
+  - name: raw
+    schema: raw
+    tables:
+      - name: ca_crashes_json_only
+        description: "Raw JSON data of California crashes"      
