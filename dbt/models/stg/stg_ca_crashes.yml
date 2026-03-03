@@ -1,0 +1,20 @@
+version: 2
+
+models:
+  - name: stg_ca_crashes
+    description: "Cleaned crash data (Silver layer)"
+    columns:
+      - name: crash_id
+        description: "Primary key of each crash"
+        tests:
+          - not_null
+          - unique
+      - name: crash_datetime
+        tests:
+          - not_null
+      - name: number_killed
+        tests:
+          - not_null
+      - name: number_injured
+        tests:
+          - not_null

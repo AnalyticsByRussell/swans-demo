@@ -1129,3 +1129,656 @@ drop table if exists "swans_demo"."marts"."marts_ca_summary__dbt_backup" cascade
 [0m14:39:21.885172 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000260C8476720>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000260C6935CD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000260C88397C0>]}
 [0m14:39:21.886169 [debug] [MainThread]: Flushing usage events
 [0m14:39:22.691376 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m17:08:17.005889 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021E4E35CC20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021E4E7DAB70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021E4E7DB2C0>]}
+
+
+============================== 17:08:17.025052 | cb519d5b-c748-470c-900b-708f2dac15b2 ==============================
+[0m17:08:17.025052 [info ] [MainThread]: Running with dbt=1.11.6
+[0m17:08:17.026053 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\r_pur\\.dbt', 'invocation_command': 'dbt test --models stg_ca_crashes', 'indirect_selection': 'eager', 'use_colors': 'True', 'use_experimental_parser': 'False', 'log_path': 'C:\\Users\\r_pur\\Projects\\swans_demo\\dbt\\logs'}
+[0m17:08:17.027052 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+Usage of `--models`, `--model`, and `-m` is deprecated in favor of `--select` or
+`-s`.
+[0m17:08:17.027052 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': 'cb519d5b-c748-470c-900b-708f2dac15b2', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021E4E715700>]}
+[0m17:08:17.419841 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'cb519d5b-c748-470c-900b-708f2dac15b2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021E4EB37350>]}
+[0m17:08:17.566081 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'cb519d5b-c748-470c-900b-708f2dac15b2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021E4EADE4B0>]}
+[0m17:08:17.568089 [info ] [MainThread]: Registered adapter: postgres=1.10.0
+[0m17:08:18.161578 [debug] [MainThread]: checksum: ec27062d18352e9cfca161c166fcc73d2201661a23a3cf3c89196a27f32cfcb8, vars: {}, profile: , target: , version: 1.11.6
+[0m17:08:18.448779 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m17:08:18.449777 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m17:08:18.449777 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m17:08:18.529582 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'cb519d5b-c748-470c-900b-708f2dac15b2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021E4EC1AAB0>]}
+[0m17:08:18.688067 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\r_pur\Projects\swans_demo\dbt\target\manifest.json
+[0m17:08:18.694429 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\r_pur\Projects\swans_demo\dbt\target\semantic_manifest.json
+[0m17:08:18.858819 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'cb519d5b-c748-470c-900b-708f2dac15b2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021E4F131400>]}
+[0m17:08:18.861361 [info ] [MainThread]: Found 3 models, 1 seed, 5 data tests, 1 source, 466 macros
+[0m17:08:18.862923 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'cb519d5b-c748-470c-900b-708f2dac15b2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021E4F0F5C10>]}
+[0m17:08:18.864914 [info ] [MainThread]: 
+[0m17:08:18.865915 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m17:08:18.865915 [info ] [MainThread]: 
+[0m17:08:18.866914 [debug] [MainThread]: Acquiring new postgres connection 'master'
+[0m17:08:18.876698 [debug] [ThreadPool]: Acquiring new postgres connection 'list_swans_demo_stg'
+[0m17:08:22.407138 [debug] [ThreadPool]: Using postgres connection "list_swans_demo_stg"
+[0m17:08:22.408136 [debug] [ThreadPool]: On list_swans_demo_stg: /* {"app": "dbt", "dbt_version": "1.11.6", "profile_name": "swans_demo", "target_name": "dev", "connection_name": "list_swans_demo_stg"} */
+select
+      'swans_demo' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'stg'
+    union all
+    select
+      'swans_demo' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'stg'
+    union all
+    select
+      'swans_demo' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'stg'
+  
+[0m17:08:22.410139 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m17:08:22.653978 [debug] [ThreadPool]: SQL status: SELECT 1 in 0.244 seconds
+[0m17:08:22.656987 [debug] [ThreadPool]: On list_swans_demo_stg: ROLLBACK
+[0m17:08:22.658501 [debug] [ThreadPool]: On list_swans_demo_stg: Close
+[0m17:08:22.661066 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_swans_demo_stg, now list_swans_demo_fct)
+[0m17:08:22.667635 [debug] [ThreadPool]: Using postgres connection "list_swans_demo_fct"
+[0m17:08:22.668641 [debug] [ThreadPool]: On list_swans_demo_fct: /* {"app": "dbt", "dbt_version": "1.11.6", "profile_name": "swans_demo", "target_name": "dev", "connection_name": "list_swans_demo_fct"} */
+select
+      'swans_demo' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'fct'
+    union all
+    select
+      'swans_demo' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'fct'
+    union all
+    select
+      'swans_demo' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'fct'
+  
+[0m17:08:22.669632 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m17:08:22.857897 [debug] [ThreadPool]: SQL status: SELECT 2 in 0.188 seconds
+[0m17:08:22.859406 [debug] [ThreadPool]: On list_swans_demo_fct: ROLLBACK
+[0m17:08:22.861927 [debug] [ThreadPool]: On list_swans_demo_fct: Close
+[0m17:08:22.863940 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_swans_demo_fct, now list_swans_demo_marts)
+[0m17:08:22.869943 [debug] [ThreadPool]: Using postgres connection "list_swans_demo_marts"
+[0m17:08:22.871452 [debug] [ThreadPool]: On list_swans_demo_marts: /* {"app": "dbt", "dbt_version": "1.11.6", "profile_name": "swans_demo", "target_name": "dev", "connection_name": "list_swans_demo_marts"} */
+select
+      'swans_demo' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'marts'
+    union all
+    select
+      'swans_demo' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'marts'
+    union all
+    select
+      'swans_demo' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'marts'
+  
+[0m17:08:22.871981 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m17:08:22.989923 [debug] [ThreadPool]: SQL status: SELECT 1 in 0.118 seconds
+[0m17:08:22.994081 [debug] [ThreadPool]: On list_swans_demo_marts: ROLLBACK
+[0m17:08:22.995073 [debug] [ThreadPool]: On list_swans_demo_marts: Close
+[0m17:08:23.003108 [debug] [MainThread]: Using postgres connection "master"
+[0m17:08:23.003795 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.11.6", "profile_name": "swans_demo", "target_name": "dev", "connection_name": "master"} */
+select distinct
+        dependent_namespace.nspname as dependent_schema,
+        dependent_class.relname as dependent_name,
+        referenced_namespace.nspname as referenced_schema,
+        referenced_class.relname as referenced_name
+
+    -- Query for views: views are entries in pg_class with an entry in pg_rewrite, but we avoid
+    -- a seq scan on pg_rewrite by leveraging the fact there is an "internal" row in pg_depend for
+    -- the view...
+    from pg_class as dependent_class
+    join pg_namespace as dependent_namespace on dependent_namespace.oid = dependent_class.relnamespace
+    join pg_depend as dependent_depend on dependent_depend.refobjid = dependent_class.oid
+        and dependent_depend.classid = 'pg_rewrite'::regclass
+        and dependent_depend.refclassid = 'pg_class'::regclass
+        and dependent_depend.deptype = 'i'
+
+    -- ... and via pg_depend (that has a row per column, hence the need for "distinct" above, and
+    -- making sure to exclude the internal row to avoid a view appearing to depend on itself)...
+    join pg_depend as joining_depend on joining_depend.objid = dependent_depend.objid
+        and joining_depend.classid = 'pg_rewrite'::regclass
+        and joining_depend.refclassid = 'pg_class'::regclass
+        and joining_depend.refobjid != dependent_depend.refobjid
+
+    -- ... we can find the tables they query from in pg_class, but excluding system tables. Note we
+    -- don't need need to exclude _dependent_ system tables, because they only query from other
+    -- system tables, and so are automatically excluded by excluding _referenced_ system tables
+    join pg_class as referenced_class on referenced_class.oid = joining_depend.refobjid
+    join pg_namespace as referenced_namespace on referenced_namespace.oid = referenced_class.relnamespace
+        and referenced_namespace.nspname != 'information_schema'
+        and referenced_namespace.nspname not like 'pg\_%'
+
+    order by
+        dependent_schema, dependent_name, referenced_schema, referenced_name;
+[0m17:08:23.004801 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m17:08:23.104686 [debug] [MainThread]: SQL status: SELECT 0 in 0.100 seconds
+[0m17:08:23.107695 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'cb519d5b-c748-470c-900b-708f2dac15b2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021E4F0417C0>]}
+[0m17:08:23.109704 [debug] [MainThread]: On master: ROLLBACK
+[0m17:08:23.112255 [debug] [MainThread]: On master: COMMIT
+[0m17:08:23.112255 [debug] [MainThread]: Using postgres connection "master"
+[0m17:08:23.113483 [debug] [MainThread]: On master: COMMIT
+[0m17:08:23.114483 [debug] [MainThread]: SQL status: COMMIT in 0.001 seconds
+[0m17:08:23.115483 [debug] [MainThread]: On master: Close
+[0m17:08:23.132809 [debug] [Thread-1 (]: Began running node test.swans_demo.not_null_stg_ca_crashes_crash_datetime.e4399aa9a6
+[0m17:08:23.135807 [info ] [Thread-1 (]: 1 of 5 START test not_null_stg_ca_crashes_crash_datetime ....................... [RUN]
+[0m17:08:23.137817 [debug] [Thread-1 (]: Acquiring new postgres connection 'test.swans_demo.not_null_stg_ca_crashes_crash_datetime.e4399aa9a6'
+[0m17:08:23.139813 [debug] [Thread-1 (]: Began compiling node test.swans_demo.not_null_stg_ca_crashes_crash_datetime.e4399aa9a6
+[0m17:08:23.178292 [debug] [Thread-1 (]: Writing injected SQL for node "test.swans_demo.not_null_stg_ca_crashes_crash_datetime.e4399aa9a6"
+[0m17:08:23.183821 [debug] [Thread-1 (]: Began executing node test.swans_demo.not_null_stg_ca_crashes_crash_datetime.e4399aa9a6
+[0m17:08:23.214358 [debug] [Thread-1 (]: Writing runtime sql for node "test.swans_demo.not_null_stg_ca_crashes_crash_datetime.e4399aa9a6"
+[0m17:08:23.220354 [debug] [Thread-1 (]: Using postgres connection "test.swans_demo.not_null_stg_ca_crashes_crash_datetime.e4399aa9a6"
+[0m17:08:23.221357 [debug] [Thread-1 (]: On test.swans_demo.not_null_stg_ca_crashes_crash_datetime.e4399aa9a6: /* {"app": "dbt", "dbt_version": "1.11.6", "profile_name": "swans_demo", "target_name": "dev", "node_id": "test.swans_demo.not_null_stg_ca_crashes_crash_datetime.e4399aa9a6"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select crash_datetime
+from "swans_demo"."stg"."stg_ca_crashes"
+where crash_datetime is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m17:08:23.221863 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m17:08:23.298412 [debug] [Thread-1 (]: SQL status: SELECT 1 in 0.077 seconds
+[0m17:08:23.304692 [debug] [Thread-1 (]: On test.swans_demo.not_null_stg_ca_crashes_crash_datetime.e4399aa9a6: ROLLBACK
+[0m17:08:23.305694 [debug] [Thread-1 (]: On test.swans_demo.not_null_stg_ca_crashes_crash_datetime.e4399aa9a6: Close
+[0m17:08:23.306695 [info ] [Thread-1 (]: 1 of 5 PASS not_null_stg_ca_crashes_crash_datetime ............................. [[32mPASS[0m in 0.17s]
+[0m17:08:23.308703 [debug] [Thread-1 (]: Finished running node test.swans_demo.not_null_stg_ca_crashes_crash_datetime.e4399aa9a6
+[0m17:08:23.308703 [debug] [Thread-1 (]: Began running node test.swans_demo.not_null_stg_ca_crashes_crash_id.9cf56d538b
+[0m17:08:23.309704 [info ] [Thread-1 (]: 2 of 5 START test not_null_stg_ca_crashes_crash_id ............................. [RUN]
+[0m17:08:23.311777 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.swans_demo.not_null_stg_ca_crashes_crash_datetime.e4399aa9a6, now test.swans_demo.not_null_stg_ca_crashes_crash_id.9cf56d538b)
+[0m17:08:23.311777 [debug] [Thread-1 (]: Began compiling node test.swans_demo.not_null_stg_ca_crashes_crash_id.9cf56d538b
+[0m17:08:23.321865 [debug] [Thread-1 (]: Writing injected SQL for node "test.swans_demo.not_null_stg_ca_crashes_crash_id.9cf56d538b"
+[0m17:08:23.325898 [debug] [Thread-1 (]: Began executing node test.swans_demo.not_null_stg_ca_crashes_crash_id.9cf56d538b
+[0m17:08:23.331920 [debug] [Thread-1 (]: Writing runtime sql for node "test.swans_demo.not_null_stg_ca_crashes_crash_id.9cf56d538b"
+[0m17:08:23.336648 [debug] [Thread-1 (]: Using postgres connection "test.swans_demo.not_null_stg_ca_crashes_crash_id.9cf56d538b"
+[0m17:08:23.337648 [debug] [Thread-1 (]: On test.swans_demo.not_null_stg_ca_crashes_crash_id.9cf56d538b: /* {"app": "dbt", "dbt_version": "1.11.6", "profile_name": "swans_demo", "target_name": "dev", "node_id": "test.swans_demo.not_null_stg_ca_crashes_crash_id.9cf56d538b"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select crash_id
+from "swans_demo"."stg"."stg_ca_crashes"
+where crash_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m17:08:23.338646 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m17:08:23.407154 [debug] [Thread-1 (]: SQL status: SELECT 1 in 0.069 seconds
+[0m17:08:23.411158 [debug] [Thread-1 (]: On test.swans_demo.not_null_stg_ca_crashes_crash_id.9cf56d538b: ROLLBACK
+[0m17:08:23.412381 [debug] [Thread-1 (]: On test.swans_demo.not_null_stg_ca_crashes_crash_id.9cf56d538b: Close
+[0m17:08:23.414391 [info ] [Thread-1 (]: 2 of 5 PASS not_null_stg_ca_crashes_crash_id ................................... [[32mPASS[0m in 0.10s]
+[0m17:08:23.415392 [debug] [Thread-1 (]: Finished running node test.swans_demo.not_null_stg_ca_crashes_crash_id.9cf56d538b
+[0m17:08:23.416393 [debug] [Thread-1 (]: Began running node test.swans_demo.not_null_stg_ca_crashes_number_injured.cdc2142266
+[0m17:08:23.417391 [info ] [Thread-1 (]: 3 of 5 START test not_null_stg_ca_crashes_number_injured ....................... [RUN]
+[0m17:08:23.419392 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.swans_demo.not_null_stg_ca_crashes_crash_id.9cf56d538b, now test.swans_demo.not_null_stg_ca_crashes_number_injured.cdc2142266)
+[0m17:08:23.419392 [debug] [Thread-1 (]: Began compiling node test.swans_demo.not_null_stg_ca_crashes_number_injured.cdc2142266
+[0m17:08:23.428924 [debug] [Thread-1 (]: Writing injected SQL for node "test.swans_demo.not_null_stg_ca_crashes_number_injured.cdc2142266"
+[0m17:08:23.431420 [debug] [Thread-1 (]: Began executing node test.swans_demo.not_null_stg_ca_crashes_number_injured.cdc2142266
+[0m17:08:23.437977 [debug] [Thread-1 (]: Writing runtime sql for node "test.swans_demo.not_null_stg_ca_crashes_number_injured.cdc2142266"
+[0m17:08:23.439979 [debug] [Thread-1 (]: Using postgres connection "test.swans_demo.not_null_stg_ca_crashes_number_injured.cdc2142266"
+[0m17:08:23.440981 [debug] [Thread-1 (]: On test.swans_demo.not_null_stg_ca_crashes_number_injured.cdc2142266: /* {"app": "dbt", "dbt_version": "1.11.6", "profile_name": "swans_demo", "target_name": "dev", "node_id": "test.swans_demo.not_null_stg_ca_crashes_number_injured.cdc2142266"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select number_injured
+from "swans_demo"."stg"."stg_ca_crashes"
+where number_injured is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m17:08:23.443429 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m17:08:23.516286 [debug] [Thread-1 (]: SQL status: SELECT 1 in 0.073 seconds
+[0m17:08:23.519278 [debug] [Thread-1 (]: On test.swans_demo.not_null_stg_ca_crashes_number_injured.cdc2142266: ROLLBACK
+[0m17:08:23.520279 [debug] [Thread-1 (]: On test.swans_demo.not_null_stg_ca_crashes_number_injured.cdc2142266: Close
+[0m17:08:23.522807 [info ] [Thread-1 (]: 3 of 5 PASS not_null_stg_ca_crashes_number_injured ............................. [[32mPASS[0m in 0.10s]
+[0m17:08:23.523813 [debug] [Thread-1 (]: Finished running node test.swans_demo.not_null_stg_ca_crashes_number_injured.cdc2142266
+[0m17:08:23.524814 [debug] [Thread-1 (]: Began running node test.swans_demo.not_null_stg_ca_crashes_number_killed.c9b8715bc9
+[0m17:08:23.526805 [info ] [Thread-1 (]: 4 of 5 START test not_null_stg_ca_crashes_number_killed ........................ [RUN]
+[0m17:08:23.528810 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.swans_demo.not_null_stg_ca_crashes_number_injured.cdc2142266, now test.swans_demo.not_null_stg_ca_crashes_number_killed.c9b8715bc9)
+[0m17:08:23.529806 [debug] [Thread-1 (]: Began compiling node test.swans_demo.not_null_stg_ca_crashes_number_killed.c9b8715bc9
+[0m17:08:23.539860 [debug] [Thread-1 (]: Writing injected SQL for node "test.swans_demo.not_null_stg_ca_crashes_number_killed.c9b8715bc9"
+[0m17:08:23.544969 [debug] [Thread-1 (]: Began executing node test.swans_demo.not_null_stg_ca_crashes_number_killed.c9b8715bc9
+[0m17:08:23.553008 [debug] [Thread-1 (]: Writing runtime sql for node "test.swans_demo.not_null_stg_ca_crashes_number_killed.c9b8715bc9"
+[0m17:08:23.556018 [debug] [Thread-1 (]: Using postgres connection "test.swans_demo.not_null_stg_ca_crashes_number_killed.c9b8715bc9"
+[0m17:08:23.557014 [debug] [Thread-1 (]: On test.swans_demo.not_null_stg_ca_crashes_number_killed.c9b8715bc9: /* {"app": "dbt", "dbt_version": "1.11.6", "profile_name": "swans_demo", "target_name": "dev", "node_id": "test.swans_demo.not_null_stg_ca_crashes_number_killed.c9b8715bc9"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select number_killed
+from "swans_demo"."stg"."stg_ca_crashes"
+where number_killed is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m17:08:23.558010 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m17:08:23.766067 [debug] [Thread-1 (]: SQL status: SELECT 1 in 0.207 seconds
+[0m17:08:23.769070 [debug] [Thread-1 (]: On test.swans_demo.not_null_stg_ca_crashes_number_killed.c9b8715bc9: ROLLBACK
+[0m17:08:23.771081 [debug] [Thread-1 (]: On test.swans_demo.not_null_stg_ca_crashes_number_killed.c9b8715bc9: Close
+[0m17:08:23.774131 [info ] [Thread-1 (]: 4 of 5 PASS not_null_stg_ca_crashes_number_killed .............................. [[32mPASS[0m in 0.25s]
+[0m17:08:23.778429 [debug] [Thread-1 (]: Finished running node test.swans_demo.not_null_stg_ca_crashes_number_killed.c9b8715bc9
+[0m17:08:23.779424 [debug] [Thread-1 (]: Began running node test.swans_demo.unique_stg_ca_crashes_crash_id.76ca519bea
+[0m17:08:23.781955 [info ] [Thread-1 (]: 5 of 5 START test unique_stg_ca_crashes_crash_id ............................... [RUN]
+[0m17:08:23.784014 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.swans_demo.not_null_stg_ca_crashes_number_killed.c9b8715bc9, now test.swans_demo.unique_stg_ca_crashes_crash_id.76ca519bea)
+[0m17:08:23.786015 [debug] [Thread-1 (]: Began compiling node test.swans_demo.unique_stg_ca_crashes_crash_id.76ca519bea
+[0m17:08:23.806355 [debug] [Thread-1 (]: Writing injected SQL for node "test.swans_demo.unique_stg_ca_crashes_crash_id.76ca519bea"
+[0m17:08:23.811856 [debug] [Thread-1 (]: Began executing node test.swans_demo.unique_stg_ca_crashes_crash_id.76ca519bea
+[0m17:08:23.818893 [debug] [Thread-1 (]: Writing runtime sql for node "test.swans_demo.unique_stg_ca_crashes_crash_id.76ca519bea"
+[0m17:08:23.822987 [debug] [Thread-1 (]: Using postgres connection "test.swans_demo.unique_stg_ca_crashes_crash_id.76ca519bea"
+[0m17:08:23.824023 [debug] [Thread-1 (]: On test.swans_demo.unique_stg_ca_crashes_crash_id.76ca519bea: /* {"app": "dbt", "dbt_version": "1.11.6", "profile_name": "swans_demo", "target_name": "dev", "node_id": "test.swans_demo.unique_stg_ca_crashes_crash_id.76ca519bea"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+select
+    crash_id as unique_field,
+    count(*) as n_records
+
+from "swans_demo"."stg"."stg_ca_crashes"
+where crash_id is not null
+group by crash_id
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m17:08:23.827019 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m17:08:23.907890 [debug] [Thread-1 (]: SQL status: SELECT 1 in 0.082 seconds
+[0m17:08:23.909902 [debug] [Thread-1 (]: On test.swans_demo.unique_stg_ca_crashes_crash_id.76ca519bea: ROLLBACK
+[0m17:08:23.911935 [debug] [Thread-1 (]: On test.swans_demo.unique_stg_ca_crashes_crash_id.76ca519bea: Close
+[0m17:08:23.913949 [info ] [Thread-1 (]: 5 of 5 PASS unique_stg_ca_crashes_crash_id ..................................... [[32mPASS[0m in 0.13s]
+[0m17:08:23.915971 [debug] [Thread-1 (]: Finished running node test.swans_demo.unique_stg_ca_crashes_crash_id.76ca519bea
+[0m17:08:23.919957 [debug] [MainThread]: On master: COMMIT
+[0m17:08:23.919957 [debug] [MainThread]: Using postgres connection "master"
+[0m17:08:23.921468 [debug] [MainThread]: On master: COMMIT
+[0m17:08:23.921994 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m17:08:24.087198 [debug] [MainThread]: SQL status: COMMIT in 0.164 seconds
+[0m17:08:24.087198 [debug] [MainThread]: On master: Close
+[0m17:08:24.088197 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m17:08:24.089206 [debug] [MainThread]: Connection 'list_swans_demo_marts' was properly closed.
+[0m17:08:24.089206 [debug] [MainThread]: Connection 'test.swans_demo.unique_stg_ca_crashes_crash_id.76ca519bea' was properly closed.
+[0m17:08:24.090205 [info ] [MainThread]: 
+[0m17:08:24.091745 [info ] [MainThread]: Finished running 5 data tests in 0 hours 0 minutes and 5.22 seconds (5.22s).
+[0m17:08:24.096540 [debug] [MainThread]: Command end result
+[0m17:08:24.138248 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\r_pur\Projects\swans_demo\dbt\target\manifest.json
+[0m17:08:24.146818 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\r_pur\Projects\swans_demo\dbt\target\semantic_manifest.json
+[0m17:08:24.157848 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\r_pur\Projects\swans_demo\dbt\target\run_results.json
+[0m17:08:24.158849 [info ] [MainThread]: 
+[0m17:08:24.159860 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m17:08:24.163214 [info ] [MainThread]: 
+[0m17:08:24.163773 [info ] [MainThread]: Done. PASS=5 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=5
+[0m17:08:24.164774 [warn ] [MainThread]: [[33mWARNING[0m][DeprecationsSummary]: Deprecated functionality
+Summary of encountered deprecations:
+- ModelParamUsageDeprecation: 1 occurrence
+To see all deprecation instances instead of just the first occurrence of each,
+run command again with the `--show-all-deprecations` flag. You may also need to
+run with `--no-partial-parse` as some deprecations are only encountered during
+parsing.
+[0m17:08:24.166782 [debug] [MainThread]: Command `dbt test` succeeded at 17:08:24.166782 after 7.49 seconds
+[0m17:08:24.167773 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021E4E2CBCE0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021E4E2C9880>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021E4E2C8B90>]}
+[0m17:08:24.168770 [debug] [MainThread]: Flushing usage events
+[0m17:08:25.372122 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m17:39:43.313815 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F2818CAD20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F281E75D00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F281A78770>]}
+
+
+============================== 17:39:43.338726 | 00a07fc2-84f4-4e3b-aea1-54940dc33d9b ==============================
+[0m17:39:43.338726 [info ] [MainThread]: Running with dbt=1.11.6
+[0m17:39:43.339730 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'False', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'True', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\r_pur\\.dbt', 'invocation_command': 'dbt run --models stg_ca_crashes --debug', 'use_colors': 'True', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'log_path': 'C:\\Users\\r_pur\\Projects\\swans_demo\\dbt\\logs'}
+[0m17:39:43.341758 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+Usage of `--models`, `--model`, and `-m` is deprecated in favor of `--select` or
+`-s`.
+[0m17:39:43.343770 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': '00a07fc2-84f4-4e3b-aea1-54940dc33d9b', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F2819369C0>]}
+[0m17:39:44.063221 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '00a07fc2-84f4-4e3b-aea1-54940dc33d9b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F2830DF590>]}
+[0m17:39:44.314001 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '00a07fc2-84f4-4e3b-aea1-54940dc33d9b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F281D169C0>]}
+[0m17:39:44.318515 [info ] [MainThread]: Registered adapter: postgres=1.10.0
+[0m17:39:45.415444 [debug] [MainThread]: checksum: ec27062d18352e9cfca161c166fcc73d2201661a23a3cf3c89196a27f32cfcb8, vars: {}, profile: , target: , version: 1.11.6
+[0m17:39:45.974872 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m17:39:45.976858 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m17:39:45.978852 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m17:39:46.096686 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '00a07fc2-84f4-4e3b-aea1-54940dc33d9b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F28321E0C0>]}
+[0m17:39:46.292890 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\r_pur\Projects\swans_demo\dbt\target\manifest.json
+[0m17:39:46.301939 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\r_pur\Projects\swans_demo\dbt\target\semantic_manifest.json
+[0m17:39:46.395791 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '00a07fc2-84f4-4e3b-aea1-54940dc33d9b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F283622900>]}
+[0m17:39:46.401092 [info ] [MainThread]: Found 3 models, 1 seed, 5 data tests, 1 source, 466 macros
+[0m17:39:46.405187 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '00a07fc2-84f4-4e3b-aea1-54940dc33d9b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F281FA8DD0>]}
+[0m17:39:46.412045 [info ] [MainThread]: 
+[0m17:39:46.413229 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m17:39:46.414242 [info ] [MainThread]: 
+[0m17:39:46.416571 [debug] [MainThread]: Acquiring new postgres connection 'master'
+[0m17:39:46.420032 [debug] [ThreadPool]: Acquiring new postgres connection 'list_swans_demo'
+[0m17:39:46.645943 [debug] [ThreadPool]: Using postgres connection "list_swans_demo"
+[0m17:39:46.646957 [debug] [ThreadPool]: On list_swans_demo: /* {"app": "dbt", "dbt_version": "1.11.6", "profile_name": "swans_demo", "target_name": "dev", "connection_name": "list_swans_demo"} */
+
+    select distinct nspname from pg_namespace
+  
+[0m17:39:46.647951 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m17:39:46.859271 [debug] [ThreadPool]: SQL status: SELECT 8 in 0.211 seconds
+[0m17:39:46.863571 [debug] [ThreadPool]: On list_swans_demo: Close
+[0m17:39:46.879647 [debug] [ThreadPool]: Acquiring new postgres connection 'list_swans_demo_marts'
+[0m17:39:46.896267 [debug] [ThreadPool]: Using postgres connection "list_swans_demo_marts"
+[0m17:39:46.898844 [debug] [ThreadPool]: On list_swans_demo_marts: /* {"app": "dbt", "dbt_version": "1.11.6", "profile_name": "swans_demo", "target_name": "dev", "connection_name": "list_swans_demo_marts"} */
+select
+      'swans_demo' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'marts'
+    union all
+    select
+      'swans_demo' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'marts'
+    union all
+    select
+      'swans_demo' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'marts'
+  
+[0m17:39:46.904062 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m17:39:47.006314 [debug] [ThreadPool]: SQL status: SELECT 1 in 0.102 seconds
+[0m17:39:47.009397 [debug] [ThreadPool]: On list_swans_demo_marts: ROLLBACK
+[0m17:39:47.011622 [debug] [ThreadPool]: On list_swans_demo_marts: Close
+[0m17:39:47.013686 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_swans_demo_marts, now list_swans_demo_stg)
+[0m17:39:47.019699 [debug] [ThreadPool]: Using postgres connection "list_swans_demo_stg"
+[0m17:39:47.021280 [debug] [ThreadPool]: On list_swans_demo_stg: /* {"app": "dbt", "dbt_version": "1.11.6", "profile_name": "swans_demo", "target_name": "dev", "connection_name": "list_swans_demo_stg"} */
+select
+      'swans_demo' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'stg'
+    union all
+    select
+      'swans_demo' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'stg'
+    union all
+    select
+      'swans_demo' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'stg'
+  
+[0m17:39:47.023370 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m17:39:47.105267 [debug] [ThreadPool]: SQL status: SELECT 1 in 0.082 seconds
+[0m17:39:47.107993 [debug] [ThreadPool]: On list_swans_demo_stg: ROLLBACK
+[0m17:39:47.113615 [debug] [ThreadPool]: On list_swans_demo_stg: Close
+[0m17:39:47.117200 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_swans_demo_stg, now list_swans_demo_fct)
+[0m17:39:47.123903 [debug] [ThreadPool]: Using postgres connection "list_swans_demo_fct"
+[0m17:39:47.125966 [debug] [ThreadPool]: On list_swans_demo_fct: /* {"app": "dbt", "dbt_version": "1.11.6", "profile_name": "swans_demo", "target_name": "dev", "connection_name": "list_swans_demo_fct"} */
+select
+      'swans_demo' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'fct'
+    union all
+    select
+      'swans_demo' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'fct'
+    union all
+    select
+      'swans_demo' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'fct'
+  
+[0m17:39:47.128123 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m17:39:47.225424 [debug] [ThreadPool]: SQL status: SELECT 2 in 0.097 seconds
+[0m17:39:47.232139 [debug] [ThreadPool]: On list_swans_demo_fct: ROLLBACK
+[0m17:39:47.236942 [debug] [ThreadPool]: On list_swans_demo_fct: Close
+[0m17:39:47.253212 [debug] [MainThread]: Using postgres connection "master"
+[0m17:39:47.260464 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.11.6", "profile_name": "swans_demo", "target_name": "dev", "connection_name": "master"} */
+select distinct
+        dependent_namespace.nspname as dependent_schema,
+        dependent_class.relname as dependent_name,
+        referenced_namespace.nspname as referenced_schema,
+        referenced_class.relname as referenced_name
+
+    -- Query for views: views are entries in pg_class with an entry in pg_rewrite, but we avoid
+    -- a seq scan on pg_rewrite by leveraging the fact there is an "internal" row in pg_depend for
+    -- the view...
+    from pg_class as dependent_class
+    join pg_namespace as dependent_namespace on dependent_namespace.oid = dependent_class.relnamespace
+    join pg_depend as dependent_depend on dependent_depend.refobjid = dependent_class.oid
+        and dependent_depend.classid = 'pg_rewrite'::regclass
+        and dependent_depend.refclassid = 'pg_class'::regclass
+        and dependent_depend.deptype = 'i'
+
+    -- ... and via pg_depend (that has a row per column, hence the need for "distinct" above, and
+    -- making sure to exclude the internal row to avoid a view appearing to depend on itself)...
+    join pg_depend as joining_depend on joining_depend.objid = dependent_depend.objid
+        and joining_depend.classid = 'pg_rewrite'::regclass
+        and joining_depend.refclassid = 'pg_class'::regclass
+        and joining_depend.refobjid != dependent_depend.refobjid
+
+    -- ... we can find the tables they query from in pg_class, but excluding system tables. Note we
+    -- don't need need to exclude _dependent_ system tables, because they only query from other
+    -- system tables, and so are automatically excluded by excluding _referenced_ system tables
+    join pg_class as referenced_class on referenced_class.oid = joining_depend.refobjid
+    join pg_namespace as referenced_namespace on referenced_namespace.oid = referenced_class.relnamespace
+        and referenced_namespace.nspname != 'information_schema'
+        and referenced_namespace.nspname not like 'pg\_%'
+
+    order by
+        dependent_schema, dependent_name, referenced_schema, referenced_name;
+[0m17:39:47.266281 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m17:39:47.411090 [debug] [MainThread]: SQL status: SELECT 0 in 0.145 seconds
+[0m17:39:47.416240 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '00a07fc2-84f4-4e3b-aea1-54940dc33d9b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F28303E330>]}
+[0m17:39:47.420318 [debug] [MainThread]: On master: ROLLBACK
+[0m17:39:47.422533 [debug] [MainThread]: On master: COMMIT
+[0m17:39:47.425584 [debug] [MainThread]: Using postgres connection "master"
+[0m17:39:47.427577 [debug] [MainThread]: On master: COMMIT
+[0m17:39:47.446704 [debug] [MainThread]: SQL status: COMMIT in 0.001 seconds
+[0m17:39:47.449777 [debug] [MainThread]: On master: Close
+[0m17:39:47.507968 [debug] [Thread-1 (]: Began running node model.swans_demo.stg_ca_crashes
+[0m17:39:47.510107 [info ] [Thread-1 (]: 1 of 1 START sql view model stg.stg_ca_crashes ................................. [RUN]
+[0m17:39:47.512189 [debug] [Thread-1 (]: Acquiring new postgres connection 'model.swans_demo.stg_ca_crashes'
+[0m17:39:47.514321 [debug] [Thread-1 (]: Began compiling node model.swans_demo.stg_ca_crashes
+[0m17:39:47.532094 [debug] [Thread-1 (]: Writing injected SQL for node "model.swans_demo.stg_ca_crashes"
+[0m17:39:47.536674 [debug] [Thread-1 (]: Began executing node model.swans_demo.stg_ca_crashes
+[0m17:39:47.630303 [debug] [Thread-1 (]: Writing runtime sql for node "model.swans_demo.stg_ca_crashes"
+[0m17:39:47.634412 [debug] [Thread-1 (]: Using postgres connection "model.swans_demo.stg_ca_crashes"
+[0m17:39:47.639033 [debug] [Thread-1 (]: On model.swans_demo.stg_ca_crashes: /* {"app": "dbt", "dbt_version": "1.11.6", "profile_name": "swans_demo", "target_name": "dev", "node_id": "model.swans_demo.stg_ca_crashes"} */
+
+  create view "swans_demo"."stg"."stg_ca_crashes__dbt_tmp"
+    
+    
+  as (
+    -- models/stg/stg_ca_crashes.sql
+
+
+with raw_data as (
+    select *
+    from "swans_demo"."raw"."ca_crashes_json_only"
+)
+
+select
+    crash_id,
+    raw_json ->> 'County Code' as county_code,
+    raw_json ->> 'County Name' as county_name,
+    raw_json ->> 'City Name' as city_name,
+    raw_json ->> 'PrimaryRoad' as primary_road,
+    raw_json ->> 'Collision Type Description' as collision_type,
+    coalesce((raw_json ->> 'NumberKilled')::int, 0) as number_killed,
+    coalesce((raw_json ->> 'NumberInjured')::int, 0) as number_injured,
+    to_timestamp(raw_json ->> 'Crash Date Time', 'YYYY-MM-DD HH24:MI:SS') as crash_datetime
+from raw_data
+  );
+[0m17:39:47.641092 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m17:39:47.987948 [debug] [Thread-1 (]: SQL status: CREATE VIEW in 0.346 seconds
+[0m17:39:48.002065 [debug] [Thread-1 (]: Using postgres connection "model.swans_demo.stg_ca_crashes"
+[0m17:39:48.003073 [debug] [Thread-1 (]: On model.swans_demo.stg_ca_crashes: /* {"app": "dbt", "dbt_version": "1.11.6", "profile_name": "swans_demo", "target_name": "dev", "node_id": "model.swans_demo.stg_ca_crashes"} */
+alter table "swans_demo"."stg"."stg_ca_crashes" rename to "stg_ca_crashes__dbt_backup"
+[0m17:39:48.006839 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.002 seconds
+[0m17:39:48.019012 [debug] [Thread-1 (]: Using postgres connection "model.swans_demo.stg_ca_crashes"
+[0m17:39:48.021152 [debug] [Thread-1 (]: On model.swans_demo.stg_ca_crashes: /* {"app": "dbt", "dbt_version": "1.11.6", "profile_name": "swans_demo", "target_name": "dev", "node_id": "model.swans_demo.stg_ca_crashes"} */
+alter table "swans_demo"."stg"."stg_ca_crashes__dbt_tmp" rename to "stg_ca_crashes"
+[0m17:39:48.024712 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.001 seconds
+[0m17:39:48.065927 [debug] [Thread-1 (]: On model.swans_demo.stg_ca_crashes: COMMIT
+[0m17:39:48.071590 [debug] [Thread-1 (]: Using postgres connection "model.swans_demo.stg_ca_crashes"
+[0m17:39:48.074742 [debug] [Thread-1 (]: On model.swans_demo.stg_ca_crashes: COMMIT
+[0m17:39:48.077794 [debug] [Thread-1 (]: SQL status: COMMIT in 0.002 seconds
+[0m17:39:48.096129 [debug] [Thread-1 (]: Applying DROP to: "swans_demo"."stg"."stg_ca_crashes__dbt_backup"
+[0m17:39:48.109977 [debug] [Thread-1 (]: Using postgres connection "model.swans_demo.stg_ca_crashes"
+[0m17:39:48.111497 [debug] [Thread-1 (]: On model.swans_demo.stg_ca_crashes: /* {"app": "dbt", "dbt_version": "1.11.6", "profile_name": "swans_demo", "target_name": "dev", "node_id": "model.swans_demo.stg_ca_crashes"} */
+drop table if exists "swans_demo"."stg"."stg_ca_crashes__dbt_backup" cascade
+[0m17:39:48.146138 [debug] [Thread-1 (]: SQL status: DROP TABLE in 0.032 seconds
+[0m17:39:48.154939 [debug] [Thread-1 (]: On model.swans_demo.stg_ca_crashes: Close
+[0m17:39:48.183457 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '00a07fc2-84f4-4e3b-aea1-54940dc33d9b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F281235E50>]}
+[0m17:39:48.188749 [info ] [Thread-1 (]: 1 of 1 OK created sql view model stg.stg_ca_crashes ............................ [[32mCREATE VIEW[0m in 0.65s]
+[0m17:39:48.191807 [debug] [Thread-1 (]: Finished running node model.swans_demo.stg_ca_crashes
+[0m17:39:48.195844 [debug] [MainThread]: On master: COMMIT
+[0m17:39:48.197837 [debug] [MainThread]: Using postgres connection "master"
+[0m17:39:48.198654 [debug] [MainThread]: On master: COMMIT
+[0m17:39:48.202831 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m17:39:48.371767 [debug] [MainThread]: SQL status: COMMIT in 0.169 seconds
+[0m17:39:48.373269 [debug] [MainThread]: On master: Close
+[0m17:39:48.375314 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m17:39:48.376323 [debug] [MainThread]: Connection 'list_swans_demo' was properly closed.
+[0m17:39:48.379401 [debug] [MainThread]: Connection 'list_swans_demo_fct' was properly closed.
+[0m17:39:48.380938 [debug] [MainThread]: Connection 'model.swans_demo.stg_ca_crashes' was properly closed.
+[0m17:39:48.382535 [info ] [MainThread]: 
+[0m17:39:48.384080 [info ] [MainThread]: Finished running 1 view model in 0 hours 0 minutes and 1.97 seconds (1.97s).
+[0m17:39:48.386665 [debug] [MainThread]: Command end result
+[0m17:39:48.444186 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\r_pur\Projects\swans_demo\dbt\target\manifest.json
+[0m17:39:48.459434 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\r_pur\Projects\swans_demo\dbt\target\semantic_manifest.json
+[0m17:39:48.475274 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\r_pur\Projects\swans_demo\dbt\target\run_results.json
+[0m17:39:48.476285 [info ] [MainThread]: 
+[0m17:39:48.478607 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m17:39:48.481179 [info ] [MainThread]: 
+[0m17:39:48.482796 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=1
+[0m17:39:48.485104 [warn ] [MainThread]: [[33mWARNING[0m][DeprecationsSummary]: Deprecated functionality
+Summary of encountered deprecations:
+- ModelParamUsageDeprecation: 1 occurrence
+To see all deprecation instances instead of just the first occurrence of each,
+run command again with the `--show-all-deprecations` flag. You may also need to
+run with `--no-partial-parse` as some deprecations are only encountered during
+parsing.
+[0m17:39:48.494921 [debug] [MainThread]: Command `dbt run` succeeded at 17:39:48.493895 after 5.60 seconds
+[0m17:39:48.496967 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F2818CAD20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F2839B23C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F283865BE0>]}
+[0m17:39:48.498096 [debug] [MainThread]: Flushing usage events
+[0m17:39:49.443358 [debug] [MainThread]: An error was encountered while trying to flush usage events
