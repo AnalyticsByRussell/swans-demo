@@ -15,5 +15,9 @@ select
     raw_json ->> 'Collision Type Description' as collision_type,
     coalesce((raw_json ->> 'NumberKilled')::int, 0) as number_killed,
     coalesce((raw_json ->> 'NumberInjured')::int, 0) as number_injured,
-    to_timestamp(raw_json ->> 'Crash Date Time', 'YYYY-MM-DD HH24:MI:SS') as crash_datetime
+    case
+      when raw_json ->> 'Crash Date Time' ~ '^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}$'
+        then (raw_json ->> 'Crash Date Time')::timestamp
+      else null
+    end as crash_datetime
 from raw_data
