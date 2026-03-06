@@ -2,19 +2,171 @@ version: 2
 
 models:
   - name: stg_ca_crashes
-    description: "Cleaned crash data (Silver layer)"
+    description: "Silver layer: all collisions data from CA JSON feed, fields typed automatically via macro"
     columns:
-      - name: crash_id
-        description: "Primary key of each crash"
+      - name: raw_row_sk
+        description: "System-generated PK from raw table"
         tests:
           - not_null
           - unique
+      - name: collision_id
+        description: "Collision Id from the raw JSON"
+        tests:
+          - not_null
+          - unique
+      - name: report_number
+        description: "Unique report number within one NCIC"
+      - name: report_version
+        description: "Version of the crash report"
+      - name: is_preliminary
+        description: "Flag indicating preliminary investigation"
+      - name: ncic_code
+        description: "NCIC code assigned by DOJ"
       - name: crash_datetime
+        description: "Datetime of the crash"
+        tests:
+          - not_null
+      - name: collision_time
+        description: "Time of the crash (24-hour clock)"
+      - name: beat
+        description: "Assigned patrol area"
+      - name: city_id
+        description: "Unique identifier of the city"
+      - name: city_code
+        description: "City code from raw JSON"
+      - name: city_name
+        description: "City name"
+      - name: county_code
+        description: "Unique code of the county"
+      - name: city_is_active
+        description: "Flag if city is active"
+      - name: city_is_incorporated
+        description: "Flag if city is incorporated"
+      - name: collision_type_code
+        description: "Collision type code"
+      - name: collision_type
+        description: "Collision type description"
+      - name: day_of_week
+        description: "Day of the week the crash occurred"
+      - name: dispatch_notified
+        description: "Flag if dispatch notified"
+      - name: has_photographs
+        description: "Whether the crash has photographs"
+      - name: hit_run
+        description: "Hit and run indicator"
+      - name: is_deleted
+        description: "Deleted crash indicator"
+      - name: is_highway_related
+        description: "Highway crash flag"
+      - name: is_tow_away
+        description: "Vehicle towed flag"
+      - name: judicial_district
+        description: "Judicial district where crash occurred"
+      - name: mv_involved_code
+        description: "Motor Vehicle involved code"
+      - name: mv_involved_desc
+        description: "Motor Vehicle involved description"
+      - name: mv_involved_other_desc
+        description: "Additional description of motor vehicle involvement"
+      - name: number_injured
+        description: "Number injured in crash"
         tests:
           - not_null
       - name: number_killed
+        description: "Number killed in crash"
         tests:
           - not_null
-      - name: number_injured
-        tests:
-          - not_null
+      - name: weather_1
+        description: "Primary weather condition"
+      - name: weather_2
+        description: "Secondary weather condition"
+      - name: road_condition_1
+        description: "Primary road condition"
+      - name: road_condition_2
+        description: "Secondary road condition"
+      - name: special_condition
+        description: "Special conditions"
+      - name: lighting_code
+        description: "Lighting code"
+      - name: lighting_description
+        description: "Lighting description"
+      - name: latitude
+        description: "Crash latitude"
+      - name: longitude
+        description: "Crash longitude"
+      - name: mile_post_direction
+        description: "Mile post direction"
+      - name: mile_post_distance
+        description: "Distance from mile post"
+      - name: mile_post_marker
+        description: "Milepost marker description"
+      - name: mile_post_unit_of_measure
+        description: "Unit of measure for milepost"
+      - name: pedestrian_action_code
+        description: "Pedestrian action code"
+      - name: pedestrian_action_desc
+        description: "Pedestrian action description"
+      - name: primary_collision_party_number
+        description: "Primary party number"
+      - name: secondary_direction
+        description: "Secondary direction of crash"
+      - name: roadway_surface_code
+        description: "Roadway surface code"
+      - name: lighting_description
+        description: "Lighting description"
+      - name: special_condition
+        description: "Special conditions from report"
+      - name: primary_collision_factor_code
+        description: "Primary collision factor code"
+      - name: primary_collision_factor_desc
+        description: "Primary collision factor description"
+      - name: primary_collision_factor_is_cited
+        description: "Primary collision factor cited flag"
+      - name: primary_collision_party_number
+        description: "Primary party number"
+      - name: primary_rd
+        description: "Primary road/location"
+      - name: reporting_district
+        description: "Reporting district"
+      - name: reporting_district_code
+        description: "Reporting district code"
+      - name: secondary_rd
+        description: "Secondary road"
+      - name: reviewed_date
+        description: "Date reviewed for final approval"
+      - name: roadway_surface_code
+        description: "Roadway surface code"
+      - name: secondary_direction
+        description: "Secondary direction"
+      - name: secondary_distance
+        description: "Secondary distance from primary road"
+      - name: secondary_unit_of_measure
+        description: "Unit of measure of secondary distance"
+      - name: secondary_road
+        description: "Secondary road"
+      - name: traffic_control_device_code
+        description: "Traffic control device code"
+      - name: created_date
+        description: "Date report was created"
+      - name: modified_date
+        description: "Date report last modified"
+      - name: is_county_road
+        description: "Flag if county road"
+      - name: is_freeway
+        description: "Flag if freeway"
+      - name: chp555_version
+        description: "CHP 555 version"
+      - name: is_additional_object_struck
+        description: "Flag if additional object struck"
+      - name: notification_date
+        description: "Notification date"
+      - name: notification_time_description
+        description: "Notification time description"
+      - name: has_digital_media_files
+        description: "Digital media files flag"
+      - name: evidence_number
+        description: "Evidence number"
+      - name: is_location_refer_to_narrative
+        description: "Flag if location referenced in narrative"
+      - name: is_aoi_one_same_as_location
+        description: "Flag if AOI one same as location"

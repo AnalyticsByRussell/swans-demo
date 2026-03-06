@@ -1,0 +1,54 @@
+Dataset County Code,Dataset County Name,FIPS Code,FIPS County Name,Local County Code,Local County Name,Latitude,Longitude
+1,Alameda,06001,Alameda,1,Alameda,37.6017,-121.7195
+2,Alpine,06003,Alpine,2,Alpine,38.5911,-119.9237
+3,Amador,06005,Amador,3,Amador,38.3482,-120.6522
+4,Butte,06007,Butte,4,Butte,39.6670,-121.6019
+5,Calaveras,06009,Calaveras,5,Calaveras,38.1938,-120.6816
+6,Colusa,06011,Colusa,6,Colusa,39.2143,-122.0080
+7,Contra Costa,06013,Contra Costa,7,Contra Costa,38.0049,-121.9131
+8,Del Norte,06015,Del Norte,8,Del Norte,41.7423,-123.9058
+9,El Dorado,06017,El Dorado,9,El Dorado,38.7426,-120.4352
+10,Fresno,06019,Fresno,10,Fresno,36.9859,-119.2321
+11,Glenn,06021,Glenn,11,Glenn,39.7306,-122.0364
+12,Humboldt,06023,Humboldt,12,Humboldt,40.7458,-123.8695
+13,Imperial,06025,Imperial,13,Imperial,33.0119,-115.4730
+14,Inyo,06027,Inyo,14,Inyo,36.7758,-117.5742
+15,Kern,06029,Kern,15,Kern,35.3275,-118.8055
+16,Kings,06031,Kings,16,Kings,36.0570,-119.8802
+17,Lake,06033,Lake,17,Lake,39.0650,-122.7103
+18,Lassen,06035,Lassen,18,Lassen,40.5197,-120.6576
+19,Los Angeles,06037,Los Angeles,19,Los Angeles,34.0522,-118.2437
+20,Madera,06039,Madera,20,Madera,37.2519,-119.6967
+21,Marin,06041,Marin,21,Marin,38.0834,-122.7632
+22,Mariposa,06043,Mariposa,22,Mariposa,37.4981,-119.9660
+23,Mendocino,06045,Mendocino,23,Mendocino,39.5501,-123.4388
+24,Merced,06047,Merced,24,Merced,37.3022,-120.4820
+25,Modoc,06049,Modoc,25,Modoc,41.4563,-121.4672
+26,Mono,06051,Mono,26,Mono,37.9210,-118.9529
+27,Monterey,06053,Monterey,27,Monterey,36.3136,-121.3540
+28,Napa,06055,Napa,28,Napa,38.5025,-122.2654
+29,Nevada,06057,Nevada,29,Nevada,39.3046,-121.1912
+30,Orange,06059,Orange,30,Orange,33.7175,-117.8311
+31,Placer,06061,Placer,31,Placer,39.0916,-121.2170
+32,Plumas,06063,Plumas,32,Plumas,39.9230,-121.2035
+33,Riverside,06065,Riverside,33,Riverside,33.9533,-117.3962
+34,Sacramento,06067,Sacramento,34,Sacramento,38.5666,-121.4689
+35,San Benito,06069,San Benito,35,San Benito,36.5760,-121.0105
+36,Santa Barbara,06071,Santa Barbara,36,Santa Barbara,34.6628,-120.2190
+37,Santa Clara,06073,Santa Clara,37,Santa Clara,37.3337,-121.8907
+38,Santa Cruz,06075,Santa Cruz,38,Santa Cruz,36.9741,-122.0308
+39,Shasta,06077,Shasta,39,Shasta,40.6032,-122.3021
+40,Sierra,06079,Sierra,40,Sierra,39.5242,-120.4350
+41,Siskiyou,06081,Siskiyou,41,Siskiyou,41.4012,-122.4227
+42,Solano,06083,Solano,42,Solano,38.3105,-121.9018
+43,Sonoma,06085,Sonoma,43,Sonoma,38.4339,-122.7715
+44,Stanislaus,06087,Stanislaus,44,Stanislaus,37.5091,-121.0000
+45,Sutter,06089,Sutter,45,Sutter,39.0210,-121.6739
+46,Tehama,06091,Tehama,46,Tehama,40.0986,-122.1749
+47,Trinity,06093,Trinity,47,Trinity,40.7999,-123.1242
+48,Tulare,06095,Tulare,48,Tulare,36.2048,-119.3451
+49,Tuolumne,06097,Tuolumne,49,Tuolumne,38.0164,-120.2363
+50,Ventura,06099,Ventura,50,Ventura,34.2746,-119.2290
+51,Yolo,06101,Yolo,51,Yolo,38.6729,-121.8581
+52,Yuba,06103,Yuba,52,Yuba,39.2549,-121.3996
+53,Unincorporated,00000,Unincorporated,53,Unincorporated,0,0

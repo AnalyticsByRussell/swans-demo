@@ -30,3 +30,5 @@ models:
 seeds:
   swans_demo:
     +schema: fct   # counties will land in fct schema
+
+    

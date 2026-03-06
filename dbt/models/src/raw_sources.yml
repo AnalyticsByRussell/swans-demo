@@ -1,0 +1,8 @@
+version: 2
+
+sources:
+  - name: raw           # logical source name
+    schema: raw         # actual schema in Postgres
+    tables:
+      - name: ca_crashes_json_only   # table/view name in Postgres
+        description: "Raw CA crash JSON data from CKAN, including helper/test rows."
