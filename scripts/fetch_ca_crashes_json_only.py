@@ -1,3 +1,25 @@
+"""
+Script: CKAN API → PostgreSQL Raw JSON Loader
+
+Description:
+This script retrieves records from the California Open Data CKAN API using
+paginated requests and stores each record as raw JSON in a PostgreSQL table.
+The data is ingested without transformation and saved in JSONB format to
+preserve the original structure for downstream processing or analytics.
+
+Main steps:
+1. Load database configuration from a .env file.
+2. Connect to PostgreSQL using psycopg2.
+3. Ensure the target schema and table exist.
+4. Fetch records from the CKAN API in batches using limit/offset pagination.
+5. Insert each API record into the database as JSONB.
+6. Log progress and total execution time.
+
+Purpose:
+The table acts as a raw landing layer in a data pipeline, allowing the source
+data to be stored exactly as received before any cleaning, transformation,
+or modeling is applied.
+"""
 import os
 import requests
 import psycopg2
