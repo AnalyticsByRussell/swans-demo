@@ -1,0 +1,25 @@
+name: 'swans_demo'
+version: '1.0'
+config-version: 2
+profile: 'swans_demo'
+
+# Folders
+model-paths: ["dbt/models"]
+seed-paths: ["dbt/seeds"]
+
+# Default materialization for models
+models:
+  swans_demo:
+    +materialized: table
+    stg:
+      +enabled: true
+    fct:
+      +enabled: true
+    marts:
+      +enabled: true
+
+# Seeds configuration
+seeds:
+  swans_demo:
+    +schema: raw
+    +quote_columns: true

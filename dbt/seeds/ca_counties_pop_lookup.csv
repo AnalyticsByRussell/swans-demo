@@ -1,0 +1,59 @@
+state_fips,county_fips,county_name,county_name_standard,centroid_lat,centroid_lon,population,population_year
+06,001,Alameda,Alameda County,37.6463,-121.8929,1671329,2023
+06,003,Alpine,Alpine County,38.5971,-119.8206,1204,2023
+06,005,Amador,Amador County,38.4458,-120.6510,41844,2023
+06,007,Butte,Butte County,39.6673,-121.6005,211632,2023
+06,009,Calaveras,Calaveras County,38.2054,-120.5542,46129,2023
+06,011,Colusa,Colusa County,39.2143,-122.2111,21547,2023
+06,013,Contra Costa,Contra Costa County,37.9192,-121.9513,1161413,2023
+06,015,Del Norte,Del Norte County,41.7426,-123.8974,27038,2023
+06,017,El Dorado,El Dorado County,38.7797,-120.5233,190345,2023
+06,019,Fresno,Fresno County,36.7468,-119.7726,1022835,2023
+06,021,Glenn,Glenn County,39.6025,-122.4017,28805,2023
+06,023,Humboldt,Humboldt County,40.7450,-123.8695,135558,2023
+06,025,Imperial,Imperial County,33.0406,-115.3554,180267,2023
+06,027,Inyo,Inyo County,36.5110,-117.4118,18527,2023
+06,029,Kern,Kern County,35.3733,-119.0187,918213,2023
+06,031,Kings,Kings County,36.0726,-119.8150,152981,2023
+06,033,Lake,Lake County,39.0420,-122.9158,68209,2023
+06,035,Lassen,Lassen County,40.6739,-120.5930,29704,2023
+06,037,Los Angeles,Los Angeles County,34.1964,-118.2619,9721138,2023
+06,039,Madera,Madera County,37.2519,-119.6963,163620,2023
+06,041,Marin,Marin County,38.0552,-122.7489,262231,2023
+06,043,Mariposa,Mariposa County,37.4849,-119.9663,17131,2023
+06,045,Mendocino,Mendocino County,39.4383,-123.3911,89345,2023
+06,047,Merced,Merced County,37.3022,-120.4829,291920,2023
+06,049,Modoc,Modoc County,41.5898,-120.7244,8589,2023
+06,051,Mono,Mono County,37.9389,-118.8870,13795,2023
+06,053,Monterey,Monterey County,36.2400,-121.3153,437325,2023
+06,055,Napa,Napa County,38.5025,-122.2654,138019,2023
+06,057,Nevada,Nevada County,39.3039,-120.7627,102241,2023
+06,059,Orange,Orange County,33.7175,-117.8311,3168044,2023
+06,061,Placer,Placer County,39.0620,-120.7215,421837,2023
+06,063,Plumas,Plumas County,39.9952,-120.8395,19604,2023
+06,065,Riverside,Riverside County,33.9533,-117.3961,2450758,2023
+06,067,Sacramento,Sacramento County,38.4747,-121.3542,1585055,2023
+06,069,San Benito,San Benito County,36.5761,-120.9876,66495,2023
+06,071,San Bernardino,San Bernardino County,34.9592,-116.4194,2180085,2023
+06,073,San Diego,San Diego County,33.0348,-116.7351,3298634,2023
+06,075,San Francisco,San Francisco County,37.7621,-122.4425,808437,2023
+06,077,San Joaquin,San Joaquin County,37.9340,-121.2722,779233,2023
+06,079,San Luis Obispo,San Luis Obispo County,35.3102,-120.4358,282424,2023
+06,081,San Mateo,San Mateo County,37.4337,-122.4014,764442,2023
+06,083,Santa Barbara,Santa Barbara County,34.5373,-120.0396,448229,2023
+06,085,Santa Clara,Santa Clara County,37.2317,-121.6976,1885508,2023
+06,087,Santa Cruz,Santa Cruz County,37.0400,-122.1427,267792,2023
+06,089,Shasta,Shasta County,40.5865,-122.3917,182155,2023
+06,091,Sierra,Sierra County,39.5769,-120.5219,3209,2023
+06,093,Siskiyou,Siskiyou County,41.5920,-122.5400,44224,2023
+06,095,Solano,Solano County,38.2510,-121.9399,453491,2023
+06,097,Sonoma,Sonoma County,38.5253,-122.9261,482650,2023
+06,099,Stanislaus,Stanislaus County,37.5091,-120.9876,552878,2023
+06,101,Sutter,Sutter County,39.0346,-121.6946,99055,2023
+06,103,Tehama,Tehama County,40.1257,-122.2016,65131,2023
+06,105,Trinity,Trinity County,40.6500,-123.1120,16060,2023
+06,107,Tulare,Tulare County,36.2200,-118.8000,473117,2023
+06,109,Tuolumne,Tuolumne County,38.0264,-119.9643,55136,2023
+06,111,Ventura,Ventura County,34.3705,-119.1391,839784,2023
+06,113,Yolo,Yolo County,38.6820,-121.9018,226847,2023
+06,115,Yuba,Yuba County,39.2700,-121.3440,83842,2023

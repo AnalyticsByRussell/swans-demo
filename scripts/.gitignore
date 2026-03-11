@@ -9,3 +9,6 @@ dbt_packages/
 
 # VSCode
 .vscode/
+
+# environment settings
+.env
