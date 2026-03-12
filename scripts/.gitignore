@@ -6,9 +6,12 @@ __pycache__/
 # dbt
 target/
 dbt_packages/
+logs/
 
 # VSCode
 .vscode/
 
+
 # environment settings
 .env
+.env.*
